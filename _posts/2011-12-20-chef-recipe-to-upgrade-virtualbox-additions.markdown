@@ -9,3 +9,5 @@ categories: vagrant, chef, virtualbox
 Every time the guys at VirtualBox update their software, you have to scramble to find resources to upgrade your virtualbox guest additions.  To prevent this from being a hassle, I created this chef recipe to help ease our suffering.
 
 <script src="https://gist.github.com/1505022.js?file=upgrade_guest_additions.rb"></script>
+
+You will probably have to restart your vagrant box for this to work.  I'm not 100% sure.
