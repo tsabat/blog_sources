@@ -20,7 +20,7 @@ Next install vagrant
 
     gem install vagrant
 
-###Create A Home Base[HomeBase]
+###Create A Home Base
 
 It is likely you'll be creating several vagrant boxes (individual machines) as you move along, so it makes sense to keep them organized in one place.  Let's create that now.
 
@@ -37,7 +37,7 @@ Opscode has a set of [cookbooks](https://github.com/opscode/cookbooks) you'll us
 
 This will create a directory `cookbooks` in your base directory containing all of Opscode's great cookbooks.  I suggest deleting the `.git` folder at the base of this dir and checking your cookbooks into your own source control repo.  As you add write cookbooks of your own, you may save them there.
 
-###Create A Project Directory[ProjectDirectory]
+###Create A Project Directory
 
 A project directory represents one (or more) VMs associated by a VagrantFile.  You'll learn more about the VagrantFile later in this article.  For now, just know that the VagrantFile acts as the configuration for your Vagrant project.  In the snippet below, we'll create a project directory called ProjectDirectory.  Choose a name that properly describes the box you're building.  For example, `WebServer` would be a good Project Directory name.
 
@@ -49,7 +49,7 @@ A project directory represents one (or more) VMs associated by a VagrantFile.  Y
 
 The Chef Repo is the basic structure required by Chef.  Your cookbooks and other important files will be kept here. In the example below, we'll be turning your Project Directory into a Chef Repo.  That's why we add the `.` at the end of the git clone command.
 
-    cd ~/boxes/AwesomeBox
+    cd ~/boxes/ProjectDirectory
     git clone https://github.com/opscode/chef-repo.git .
 
 If you run a `ls -al` command, you'll notice the following directory structure in your Project Directory now:
@@ -112,7 +112,8 @@ We'll run the following knife command create your `vagrant_main` cookbook.
 
 Observe your handiwork :
 
-    cd ~/boxes/ProjectDirectory
+    cd ~/boxes/ProjectDirectory/cookbooks/vagrant_main
+    ls -al
 
 and you'll see output which looks like this:
 
@@ -147,4 +148,6 @@ to
         chef.add_recipe "vagrant_main"
     end
 
-###
+###Conclusion
+
+You've set up a Vagrant Development Environment.  Now, write a recipe.
