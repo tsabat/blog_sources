@@ -8,7 +8,7 @@ categories: tips
 
 ###SSH Tips
 
-This excellent article entitled [Tips for remote unix work](http://shebang.brandonmintern.com/tips-for-remote-unix-work-ssh-screen-and-vnc#) covers some vital SSH goodness.  For example, copying your public ssh key
+This excellent article entitled [Tips for Remote Unix Work](http://shebang.brandonmintern.com/tips-for-remote-unix-work-ssh-screen-and-vnc#) covers some vital SSH goodness.  For example, copying your public ssh key
 
     ssh user@example.com 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 
