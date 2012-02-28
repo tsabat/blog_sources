@@ -6,6 +6,9 @@ comments: true
 categories: vim git
 ---
 
+###Update
+
+The blog post below is over-simplified.  You should follow the steps outlined by the [vimcast](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) guys.
 ###Objective
 
 Programs like vim, bash, and zsh all use `dotfiles` for configuration.  You want to back them up in case of disaster.  Here's how I handle that using a `.dotfiles` directory and symlinks.

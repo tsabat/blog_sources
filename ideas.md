@@ -16,3 +16,11 @@
 [Supervisor](https://github.com/bkonkle/chef-cookbooks/tree/master/supervisor)
 
 ###How to write a LWDP
+
+###Building uninstallable/maintainable source packages
+
+[Checkinstall](http://checkinstall.izto.org/) deb creator will watch your installs and create a dpkg for you.
+
+###Attributes, how they work with roles, etc
+
+[A good writeup](http://agiletesting.blogspot.com/2010/11/working-with-chef-attributes.html)
